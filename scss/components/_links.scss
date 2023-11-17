@@ -1,0 +1,38 @@
+.link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.3s;
+
+  &:hover{
+    color: var(--color-brand-light);
+  }
+}
+
+.address-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.address-link:hover {
+  color: var(--color-brand-light);
+}
+
+.address-social {
+  fill: var(--color-primary-light);
+  transition: fill 0.3s;
+}
+
+.address-social:hover {
+  fill: var(--color-brand-light);
+}
+
+.policy-link {
+  color: var(--color-primary-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.policy-link:hover {
+  color: var(--color-brand-light);
+}
