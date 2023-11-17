@@ -4,13 +4,17 @@
   // }
   &__control {
     width: 100%;
-    padding: 16px 42px;
+    padding: 8px 24px;
     border-radius: 8px;
     border: 1px solid var(--color-secondary-light);
     background-color: transparent;
     outline: none;
     font-size: 16px;
     font-weight: 400;
+
+    @media screen and (min-width: $bp-tablet) {
+      padding: 16px 42px;
+    }
 
     &:focus {
       border-color: var(--color-brand-light);
@@ -26,7 +30,5 @@
       color: var(--color-primary-dark);
       font-weight: 300;
     }
-
-
   }
 }

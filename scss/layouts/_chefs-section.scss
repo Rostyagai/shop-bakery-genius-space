@@ -1,31 +1,48 @@
-.chefs-section{
-  &__title{
+.chefs-section {
+  &__title {
     position: relative;
-    margin: 0 auto 80px;
+    margin: 0 auto 24px;
+
+    @media screen and (min-width: $bp-desktop) {
+      margin-bottom: 80px;
+    }
+
     &::before,
-    &::after{
-       position: absolute;
+    &::after {
+      display: none;
+      position: absolute;
       bottom: 23px;
       content: "";
       width: 320px;
       border: 2px solid var(--color-secondary-grey);
+
+      @media screen and (min-width: $bp-desktop) {
+        display: block;
+      }
     }
-    &::before{
+    &::before {
       left: 0;
     }
-    &::after{
+    &::after {
       right: 0;
-    } 
+    }
   }
 
-  &__list{
-      display: flex;
-      gap: 30px;
-      flex-wrap: wrap;
-  }
-  &__item{
-      flex-basis: calc((100% - 30px) / 2);
-  }
- 
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
 
+    flex-wrap: wrap;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 40px 30px;
+    }
+  }
+
+  &__item {
+    flex-basis: calc((100% - 30px) / 2);
+    align-items: flex-start;
+  }
 }

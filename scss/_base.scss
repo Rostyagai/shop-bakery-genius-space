@@ -27,6 +27,13 @@ a {
   display: inline-block;
 }
 
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+  object-fit: cover;
+}
+
 h1,
 h2,
 h3,
