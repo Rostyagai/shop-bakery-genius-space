@@ -627,12 +627,13 @@ ul {
 }
 
 .contact-section {
-  margin-bottom: 96px;
+  margin-bottom: 0px;
   padding-bottom: 0;
 }
 @media screen and (min-width: 1280px) {
   .contact-section {
     padding-bottom: 20px;
+    margin-bottom: 96px;
   }
 }
 .contact-section__container {
@@ -806,7 +807,7 @@ ul {
   padding: 80px 48px;
   position: relative;
   width: 100%;
-  height: 70%;
+  height: 85%;
   max-width: 880px;
   max-height: 880px;
   background-color: var(--color-primary-light);
