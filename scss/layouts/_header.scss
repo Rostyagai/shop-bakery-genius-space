@@ -6,49 +6,62 @@
   left: 0;
   width: 100%;
 
-  @media screen and (min-width: $bp-desktop) {
-      padding-top: 32px;
+  &__logo-lg {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
     }
+  }
+
+  &__logo-sm {
+    display: block;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+  @media screen and (min-width: $bp-desktop) {
+    padding-top: 32px;
+  }
 
   &__container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 40px;
-    }
-  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
   &__nav {
-      display: flex;
-      align-items: center;
-      flex-grow: 1;
-      gap: 40px;
-    }
-  
+    display: flex;
+    align-items: center;
+    flex-grow: 1;
+    gap: 40px;
+  }
+
   &__menu {
     display: none;
-      @media screen and (min-width: $bp-desktop) {
-        display: flex;
-        flex-grow: 1;
-        justify-content: center;
-        gap: 64px;
-      }
+    @media screen and (min-width: $bp-desktop) {
+      display: flex;
+      flex-grow: 1;
+      justify-content: center;
+      gap: 64px;
     }
-  &__button{
-    display: none;
-      @media screen and (min-width: $bp-desktop) {
-        display: block;
-      }
   }
-  &__burger{
+  &__button {
+    display: none;
+    @media screen and (min-width: $bp-desktop) {
+      display: block;
+    }
+  }
+  &__burger {
     border: none;
     background-color: transparent;
     padding: 0;
     width: 24px;
     height: 24px;
     fill: var(--color-primary-light);
-      @media screen and (min-width: $bp-desktop) {
-        display: none;
-      }
+    @media screen and (min-width: $bp-desktop) {
+      display: none;
+    }
   }
 }
-

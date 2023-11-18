@@ -21,7 +21,10 @@
 }
 
 .modal {
-  padding: 80px 48px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 32px;
   position: relative;
   width: 100%;
   height: 85%;
@@ -32,14 +35,26 @@
   overflow-y: auto;
 
   @media screen and (min-width: $bp-tablet) {
+    display: block;
     padding: 128px;
     height: 100%;
+  }
+
+  &__container {
+    // margin: 50% 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      margin: auto;
+    }
   }
 
   &__btn-close {
     position: absolute;
     right: 44px;
     top: 44px;
+    border: 0;
+    background-color: transparent;
+    padding: 8px;
   }
   &__title {
     text-align: center;
@@ -75,5 +90,27 @@
   &__button {
     display: block;
     margin: 0 auto 24px;
+  }
+
+  &__bread-small {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__bread-large {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
   }
 }

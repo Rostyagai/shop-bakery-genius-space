@@ -13,7 +13,8 @@
         <div class="header__container">
           <nav class="header__nav">
             <a href="index.html">
-              <img src="./images/logo.svg" alt="Логотип Сучасна пекарня" />
+              <img class="header__logo-lg" src="./images/logo.svg" alt="Логотип Сучасна пекарня" />
+              <img class="header__logo-sm" src="./images/logo-small.svg" alt="Логотип Сучасна пекарня" />
             </a>
             <ul class="header__menu">
               <li><a class="link" href="#traditions-section">Наші традиції</a></li>
@@ -29,7 +30,25 @@
             </svg>
           </button>
           <div class="mobile-menu" id="mobile-menu">
-            <button class="mobile-menu__btn-close" id="menu-btn-close" type="button">Close</button>
+            <div class="container">
+              <div class="mobile-menu__container">
+                <div class="mobile-menu__header">
+                  <a href="index.html">
+                    <img src="./images/logo-black.svg" alt="Логотип Сучасна пекарня" />
+                  </a>
+                  <button class="mobile-menu__btn-close" id="menu-btn-close" type="button">
+                    <img src="./images/icons/icon-close.png" alt="close-button" />
+                  </button>
+                </div>
+                <ul class="mobile-menu__list">
+                  <li><a class="mobile-menu__link link" href="#traditions-section">Наші традиції</a></li>
+                  <li><a class="mobile-menu__link link" href="#chefs-section">Шеф-кухарі</a></li>
+                  <li><a class="mobile-menu__link link" href="#formats-section">Формати</a></li>
+                  <li><a class="mobile-menu__link link" href="#contact-section">Контакти</a></li>
+                </ul>
+                <img class="mobile-menu__bread" src="./images/bg-images/menu-bread-large.png" alt="bread-small" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -336,44 +355,51 @@
     </footer>
     <div class="backdrop is-hidden">
       <div class="modal">
-        <h2 class="modal__title">Замовити дзвінок</h2>
-        <p class="modal__descr">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
-        <button class="modal__btn-close" id="modal-btn-close" type="button">Close</button>
+        <div class="modal__container">
+          <h2 class="modal__title">Замовити дзвінок</h2>
+          <p class="modal__descr">Залишіть заявку та наш спеціаліст зв'яжеться з Вами!</p>
+          <button class="modal__btn-close" id="modal-btn-close" type="button">
+            <img src="./images/icons/icon-close.png" alt="close-button" />
+          </button>
 
-        <form name="modal-form" autocomplete="no">
-          <div class="modal__form-field input">
-            <label class="input__label hidden" for="user-name">Ім’я</label>
-            <input class="input__control" type="text" name="user-name" id="user-name" placeholder="Ім’я" required />
-          </div>
-          <div class="modal__form-field input">
-            <label class="input__label hidden" for="user-tel">Телефон</label>
-            <input
-              class="input__control"
-              type="tel"
-              name="user-tel"
-              id="user-tel"
-              pattern="^\+[0-9]{12}"
-              placeholder="Телефон"
-              required
-            />
-          </div>
-          <div class="modal__form-field input">
-            <label class="input__label hidden" for="user-email">Електронна пошта</label>
-            <input
-              class="input__control"
-              type="email"
-              name="user-email"
-              id="user-email"
-              placeholder="Електронна пошта"
-              required
-            />
-          </div>
+          <form name="modal-form" autocomplete="no">
+            <div class="modal__form-field input">
+              <label class="input__label hidden" for="user-name">Ім’я</label>
+              <input class="input__control" type="text" name="user-name" id="user-name" placeholder="Ім’я" required />
+            </div>
+            <div class="modal__form-field input">
+              <label class="input__label hidden" for="user-tel">Телефон</label>
+              <input
+                class="input__control"
+                type="tel"
+                name="user-tel"
+                id="user-tel"
+                pattern="^\+[0-9]{12}"
+                placeholder="Телефон"
+                required
+              />
+            </div>
+            <div class="modal__form-field input">
+              <label class="input__label hidden" for="user-email">Електронна пошта</label>
+              <input
+                class="input__control"
+                type="email"
+                name="user-email"
+                id="user-email"
+                placeholder="Електронна пошта"
+                required
+              />
+            </div>
 
-          <button class="modal__button button" type="submit">Замовити дзвінок</button>
-          <p class="form-terms">
-            Натискаючи на кнопку я погоджуюсь з <a class="form-terms__link" href="#">політикою конфіденційності</a>
-          </p>
-        </form>
+            <button class="modal__button button" type="submit">Замовити дзвінок</button>
+            <p class="form-terms">
+              Натискаючи на кнопку я погоджуюсь з <a class="form-terms__link" href="#">політикою конфіденційності</a>
+            </p>
+          </form>
+
+          <img class="modal__bread-small" src="./images/bg-images/menu-bread-small.png" alt="bread" />
+          <img class="modal__bread-large" src="./images/bg-images/menu-bread-large.png" alt="bread" />
+        </div>
       </div>
     </div>
 
