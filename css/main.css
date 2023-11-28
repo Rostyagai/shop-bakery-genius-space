@@ -429,7 +429,6 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-attachment: fixed;
 }
 @media screen and (min-width: 1280px) {
   .hero-section {
